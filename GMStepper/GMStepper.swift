@@ -177,6 +177,7 @@ import UIKit
         button.addTarget(self, action: #selector(GMStepper.leftButtonTouchDown), for: .touchDown)
         button.addTarget(self, action: #selector(GMStepper.buttonTouchUp), for: .touchUpInside)
         button.addTarget(self, action: #selector(GMStepper.buttonTouchUp), for: .touchUpOutside)
+        button.addTarget(self, action: #selector(GMStepper.buttonTouchUp), for: .touchCancel)
         return button
     }()
 
@@ -189,6 +190,7 @@ import UIKit
         button.addTarget(self, action: #selector(GMStepper.rightButtonTouchDown), for: .touchDown)
         button.addTarget(self, action: #selector(GMStepper.buttonTouchUp), for: .touchUpInside)
         button.addTarget(self, action: #selector(GMStepper.buttonTouchUp), for: .touchUpOutside)
+        button.addTarget(self, action: #selector(GMStepper.buttonTouchUp), for: .touchCancel)
         return button
     }()
 
